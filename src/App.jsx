@@ -129,7 +129,7 @@ export default function App() {
 
   // ── Pobieranie danych ────────────────────────────────────────────────────────
   useEffect(() => {
-    fetch("./wyniki_nabor_gdansk.json")
+    fetch("https://raw.githubusercontent.com/shrekin/liceum-gdansk/main/public/wyniki_nabor_gdansk.json")
       .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then((d) => { setData(d); setLoading(false); })
       .catch((e) => { setError(e.message); setLoading(false); });
