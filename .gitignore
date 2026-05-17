@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 nabor_stats.log
 .DS_Store
+.claude
