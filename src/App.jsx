@@ -105,7 +105,7 @@ function getProgi(szkolaId, oddzialNazwa) {
 // ─── Kolumny tabeli ───────────────────────────────────────────────────────────
 
 const COLUMNS = [
-  { key: "szkolaNazwa",         label: ["Szkoła /", "Profil klasy"],                sortable: true,  width: "minmax(120px, 2fr)"  },
+  { key: "szkolaNazwa",         label: ["Szkoła /", "Profil klasy"],                sortable: true,  width: "minmax(100px, 1.4fr)"  },
   { key: "miejsca",             label: ["Liczba miejsc", "w klasie"],               sortable: true,  width: "minmax(60px, 0.5fr)" },
   { key: "chetni_ogolem",       label: ["Liczba chętnych", "ogółem"],               sortable: true,  width: "minmax(70px, 0.5fr)" },
   { key: "chetni_pierwsza_pref",label: ["Liczba chętnych", "I preferencja"],        sortable: true,  width: "minmax(75px, 0.5fr)" },
