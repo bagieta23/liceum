@@ -108,7 +108,7 @@ const COLUMNS = [
   { key: "szkolaNazwa",         label: ["Szkoła /", "Profil klasy"],                sortable: true,  width: "minmax(100px, 1.4fr)"  },
   { key: "miejsca",             label: ["Liczba miejsc", "w klasie"],               sortable: true,  width: "minmax(60px, 0.4fr)" },
   { key: "chetni_ogolem",       label: ["Liczba chętnych", "ogółem"],               sortable: true,  width: "minmax(60px, 0.4fr)" },
-  { key: "chetni_pierwsza_pref",label: ["Liczba chętnych", "I preferencja"],        sortable: true,  width: "minmax(60px, 0.4fr)" },
+  { key: "chetni_pierwsza_pref",label: ["Liczba chętnych", "I wybór"],        sortable: true,  width: "minmax(60px, 0.4fr)" },
   { key: "delete",              label: ["", ""],                                    sortable: false, width: "40px"                },
 ];
 
