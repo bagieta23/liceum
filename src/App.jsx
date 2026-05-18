@@ -105,7 +105,7 @@ function getProgi(szkolaId, oddzialNazwa) {
 // ─── Kolumny tabeli ───────────────────────────────────────────────────────────
 
 const COLUMNS = [
-  { key: "szkolaNazwa",         label: ["Szkoła /", "Profil klasy"],                sortable: true,  width: "minmax(200px, 2.5fr)" },
+  { key: "szkolaNazwa",         label: ["Szkoła /", "Profil klasy"],                sortable: true,  width: "minmax(150px, 2.0fr)" },
   { key: "miejsca",             label: ["Liczba miejsc", "w klasie"],               sortable: true,  width: "minmax(70px, 1fr)"   },
   { key: "chetni_ogolem",       label: ["Liczba chętnych", "ogółem"],               sortable: true,  width: "minmax(80px, 1fr)"   },
   { key: "chetni_pierwsza_pref",label: ["Liczba chętnych", "I preferencja"],                sortable: true,  width: "minmax(85px, 1fr)"   },
@@ -250,8 +250,8 @@ export default function App() {
           {/* <span style={styles.gradient}>Licea 2026</span> */}
         </h1>
         <p style={styles.subtitle}>
-          Marcel Wojciechowski, klasa 8B | Pobrane dane są z dnia {data.pobrano_czytelnie}.{" "}
-          Aktualizacja co 30 min.
+          Marcel Wojciechowski, klasa 8B (Pobrane dane są z dnia {data.pobrano_czytelnie}.{" "}
+          Aktualizacja co 30 min.)
         </p>
       </div>
 
