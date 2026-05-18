@@ -248,12 +248,12 @@ export default function App() {
       {/* ── Nagłówek ── */}
       <div style={styles.header}>
         <h1 style={styles.h1}>
-          <span style={{ color: "#1d1d1f" }}>Gdańskie </span>
-          <span style={styles.gradient}>Licea 2026</span>
+          <span style={{ color: "#1d1d1f" }}>Szkoły średnie w Gdańsku</span>
+          {/* <span style={styles.gradient}>Licea 2026</span> */}
         </h1>
         <p style={styles.subtitle}>
-          Pobrane dane z {data.pobrano_czytelnie}.{" "}
-          Aktualizacja odbywa się cyklicznie i automatycznie.
+          Marcel Wojciechowski, klasa 8B | Pobrane dane są z dnia {data.pobrano_czytelnie}.{" "}
+          Aktualizacja co 30 min.
         </p>
       </div>
 
@@ -262,7 +262,7 @@ export default function App() {
       <div style={styles.card}>
 
         {/* Nagłówek karty */}
-        <div style={styles.cardTitle}>Statystyki naboru</div>
+        <div style={styles.cardTitle}>Statystyki w szkołach</div>
 
         {/* ── Tabela watchlisty ── */}
         <div style={{ overflowX: "auto", width: "100%" }}>
@@ -436,7 +436,7 @@ export default function App() {
             <li><strong>Liczba w nawiasie</strong> — liczba osób, które wybrały dany oddział, ale nie dostarczyły jeszcze wniosku lub ich wniosek nie został jeszcze zweryfikowany.</li>
           </ul>
         </div>
-        <div style={styles.infoSection}>
+        {/* <div style={styles.infoSection}>
           <p style={styles.infoLabel}>Obliczenia</p>
           <ul style={styles.infoList}>
             <li><strong>Prawdopodobieństwo dostania się ogólnie</strong> — to obliczenie miejsca/chetni ogolem (z zaakceptowanymi wnioskami) x 100%</li>
@@ -445,10 +445,10 @@ export default function App() {
             <li><strong>Z uwzgl. ocz. I wybór</strong> - to obliczenie miejsca/(chetni I wybór + chetni I wybór oczekujący) x 100%, czyli szacunkowe prawdopodobieństwo dostania się, jeśli uwzględnimy również oczekujących I wyboru.</li>
             <li><strong>Wskaźnik</strong> - to obliczenie chętni/miejsca, ilu chętnych przypada na jedno miejsce. Im wyższy wskaźnik, tym trudniej się dostać.</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* ── Legenda ── */}
-        <div style={styles.legendRow}>
+        {/* <div style={styles.legendRow}>
           {LEGENDA.map((l) => (
             <div key={l.label} style={styles.legendItem}>
               <span style={{ ...styles.legendDot, background: l.bg }} />
@@ -456,14 +456,14 @@ export default function App() {
               <span style={styles.legendDesc}>{l.desc}</span>
             </div>
           ))}
-        </div>
+        </div> */}
 
       </div>{/* /card */}
       </div>{/* /cardWrapper */}
 
       {/* ── Stopka ── */}
       <footer style={styles.footer}>
-        Źródło danych: nabor-pomorze.edu.com.pl
+        Źródło danych ze strony nabor-pomorze.edu.com.pl
       </footer>
     </div>
   );
