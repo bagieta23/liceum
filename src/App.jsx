@@ -278,13 +278,18 @@ export default function App() {
                   }}
                   onClick={() => col.sortable && handleSort(col.key)}
                 >
-                  {col.label.map((line, i) => line && <span key={i}>{line}</span>)}
-                  {col.sortable && (
-                    <SortIcon
-                      active={sortCfg.key === col.key}
-                      dir={sortCfg.dir}
-                    />
-                  )}
+                  {col.label.map((line, i) => {
+                    if (!line) return null;
+                    const isLastLine = !col.label.slice(i + 1).some(Boolean);
+                    return (
+                      <span key={i} style={{ display: "inline-flex", alignItems: "center" }}>
+                        {line}
+                        {isLastLine && col.sortable && (
+                          <SortIcon active={sortCfg.key === col.key} dir={sortCfg.dir} />
+                        )}
+                      </span>
+                    );
+                  })}
                 </div>
               ))}
             </div>
