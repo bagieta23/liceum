@@ -250,7 +250,7 @@ export default function App() {
           {/* <span style={styles.gradient}>Licea 2026</span> */}
         </h1>
         <p style={styles.subtitle}>
-          Marcel Wojciechowski, klasa 8B (Pobrane dane są z dnia {data.pobrano_czytelnie}.{" "}
+          <span style={{ color: "#1d1d1f" }}></span>Marcel Wojciechowski, klasa 8B</span> (Pobrane dane są z dnia {data.pobrano_czytelnie}.{" "}
           Aktualizacja co 30 min.)
         </p>
       </div>
