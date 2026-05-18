@@ -109,8 +109,6 @@ const COLUMNS = [
   { key: "miejsca",             label: ["Liczba miejsc", "w klasie"],               sortable: true,  width: "minmax(70px, 1fr)"   },
   { key: "chetni_ogolem",       label: ["Liczba chętnych", "ogółem"],               sortable: true,  width: "minmax(80px, 1fr)"   },
   { key: "chetni_pierwsza_pref",label: ["Liczba chętnych", "I preferencja"],                sortable: true,  width: "minmax(85px, 1fr)"   },
-  { key: "prog_2024",           label: ["Próg punktowy", "w roku 2024"],                 sortable: true,  width: "minmax(75px, 1fr)"   },
-  { key: "prog_2025",           label: ["Próg punktowy", "w roku 2025"],                 sortable: true,  width: "minmax(75px, 1fr)"   },
   { key: "delete",              label: ["", ""],                                    sortable: false, width: "40px"                },
 ];
 
@@ -330,16 +328,6 @@ export default function App() {
                       value={row.chetni_pierwsza_pref}
                       pending={row.chetni_pierwsza_pref_oczekujacy}
                     />
-                  </div>
-
-                  {/* Próg 2024 */}
-                  <div style={{ ...styles.valueCell, color: row.prog_2024 == null ? "#d1d5db" : "#222" }}>
-                    {row.prog_2024 ?? "—"}
-                  </div>
-
-                  {/* Próg 2025 */}
-                  <div style={{ ...styles.valueCell, color: row.prog_2025 == null ? "#d1d5db" : "#222" }}>
-                    {row.prog_2025 ?? "—"}
                   </div>
 
                   {/* Usuń */}
