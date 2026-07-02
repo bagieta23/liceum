@@ -1,6 +1,6 @@
 {
-  "pobrano": "2026-07-02T13:18:29",
-  "pobrano_czytelnie": "2 July 2026, godz. 13:18",
+  "pobrano": "2026-07-02T17:40:16",
+  "pobrano_czytelnie": "2 July 2026, godz. 17:40",
   "szkoly": [
     {
       "id": "8",
@@ -874,9 +874,9 @@
           "nazwa": "XV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi, Gdańsk - 0h Klasa wstępna do klasy dwujęzycznej z j. hisz",
           "miejsca": 32,
           "chetni_ogolem": 222,
-          "chetni_ogolem_oczekujacy": 3,
+          "chetni_ogolem_oczekujacy": 4,
           "chetni_pierwsza_pref": 48,
-          "chetni_pierwsza_pref_oczekujacy": 0,
+          "chetni_pierwsza_pref_oczekujacy": 1,
           "wskaznik": 6.94
         },
         {
@@ -939,7 +939,7 @@
           "chetni_ogolem": 2482,
           "chetni_ogolem_oczekujacy": 0,
           "chetni_pierwsza_pref": 312,
-          "chetni_pierwsza_pref_oczekujacy": 0,
+          "chetni_pierwsza_pref_oczekujacy": 1,
           "wskaznik": 12.41
         }
       ]
